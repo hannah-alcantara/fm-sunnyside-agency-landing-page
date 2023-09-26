@@ -103,17 +103,21 @@ body {
 }
 
 .header {
-  height: 66vh; //???
+  min-height: 100vh; //???
   background-image: url(images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
 
-  &__logo-box {
-    position: absolute;
-    top: 30px;
-    left: 25px;
+  &__box {
+    // position: absolute;
+    // top: 30px;
+    // left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
   }
 
   &__title-box {
