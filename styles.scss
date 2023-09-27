@@ -103,9 +103,9 @@ body {
 }
 
 .header {
-  min-height: 100vh; //???
+  min-height: 100vh;
   background-image: url(images/mobile/image-header.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
