@@ -1,20 +1,16 @@
-// COLORS
+//Primary
+$color-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-dark-cyan: hsl(167, 40%, 24%); //graphic design text
+$color-blue: hsl(198, 62%, 26%); //photography text
+$color-moderate-cyan: hsl(168, 34%, 41%); //footer
 
-// ### Primary
-
-// - Soft red: hsl(7, 99%, 70%)
-// - Yellow: hsl(51, 100%, 49%)
-// - Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
-// - Dark blue (photography text): hsl(198, 62%, 26%)
-// - Dark moderate cyan (footer): hsl(168, 34%, 41%)
-
-// ### Neutral
-
-// - Very dark desaturated blue: hsl(212, 27%, 19%)
-// - Very dark grayish blue: hsl(213, 9%, 39%)
-// - Dark grayish blue: hsl(232, 10%, 55%)
-// - Grayish blue: hsl(210, 4%, 67%)
-// - White: hsl(0, 0%, 100%)
+//Neutral
+$color-dark-blue: hsl(212, 27%, 19%);
+$color-gray-blue: hsl(213, 9%, 39%);
+$color-light-gray: hsl(232, 10%, 55%);
+$color-lighter-gray: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
 
 * {
   margin: 0;
@@ -36,6 +32,7 @@ body {
   font-size: 40px;
   font-weight: 900;
   color: hsl(0, 0%, 100%);
+  white-space: nowrap;
   letter-spacing: 8px;
   text-align: center;
   text-transform: uppercase;
@@ -88,36 +85,36 @@ body {
   }
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+// .navigation {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+// }
 
-.navigation-button {
-}
+// .navigation-button {
+// }
 
-.navigation-item {
-  text-decoration: none;
-  color: hsl(210, 4%, 67%);
-}
+// .navigation-item {
+//   text-decoration: none;
+//   color: hsl(210, 4%, 67%);
+// }
 
 .header {
   min-height: 100vh;
   background-image: url(images/mobile/image-header.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
 
-  &__box {
+  &__bar {
     // position: absolute;
     // top: 30px;
     // left: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 1rem;
   }
 
   &__title-box {
@@ -128,7 +125,7 @@ body {
   }
 
   &__arrow {
-    padding-top: 45px;
+    margin-top: 6rem;
     text-align: center;
   }
 
@@ -138,14 +135,33 @@ body {
   }
 }
 
-.section-image {
+.topnav {
+  display: none;
+}
+
+.image {
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   vertical-align: top;
+
+  &__egg--mobile {
+    background-image: url(images/mobile/image-transform.jpg);
+  }
+
+  &__glass--mobile {
+    background-image: url(images/mobile/image-stand-out.jpg);
+  }
+
+  &__graphics--mobile {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+  }
 }
 
 .section-text {
   text-align: center;
-  padding: 60px 30px;
+  margin: 4rem 1.5rem;
 }
 
 .button-text {
@@ -168,6 +184,7 @@ body {
 }
 
 .section-graphics {
+  // background-image: url(images/mobile/image-graphic-design.jpg);
   position: relative;
 }
 
@@ -252,3 +269,101 @@ body {
 // .attribution a {
 //   color: hsl(228, 45%, 44%);
 // }
+
+@media (min-width: 1440px) {
+  .header {
+    background-image: url(images/desktop/image-header.jpg);
+
+    &__bar {
+      padding: 2.4rem;
+    }
+
+    &__logo {
+      height: 2rem;
+    }
+
+    &__title-box {
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__arrow {
+      margin-top: 7rem;
+    }
+
+    &__navigation {
+      display: none;
+    }
+  }
+
+  .heading-primary {
+    font-size: 3.4rem;
+    letter-spacing: 0.7rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
+
+  .mobile__menu {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    margin: 0 2.2rem;
+    color: $color-white;
+
+    &__button {
+      border: none;
+      border-radius: 2rem;
+      padding: 1.2rem 2rem;
+      font-size: 1rem;
+      font-family: "Fraunces", serif;
+      text-transform: uppercase;
+    }
+  }
+
+  //First row
+  .section-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__egg {
+      grid-template-areas: "text egg";
+    }
+
+    &__glass {
+      grid-template-areas: "glass text";
+    }
+  }
+
+  .image {
+    &__egg--desktop {
+      background-image: url(images/desktop/image-transform.jpg);
+      grid-area: egg;
+    }
+
+    &__glass--desktop {
+      background-image: url(images/desktop/image-stand-out.jpg);
+    }
+
+    &__graphics--desktop {
+      background-image: url(images/desktop/image-graphic-design.jpg);
+    }
+  }
+
+  .section-text {
+    text-align: left;
+    margin: 8.5rem;
+    display: block;
+    grid-area: text;
+  }
+}
