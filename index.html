@@ -21,31 +21,28 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <!-- <div class="navigation">
-      <a class="navigation-button" href="#"
-        ><img src="images/icon-hamburger.svg" alt="Menu"
-      /></a>
-      <div class="topnav_mobile">
-        <a class="nav-item_mobile" href="#">About</a>
-        <a class="nav-item_mobile" href="#">Services</a>
-        <a class="nav-item_mobile" href="#">Projects</a>
-        <a class="nav-item_mobile" href="#" class="button">Contact</a>
-      </div>
-    </div> -->
-
     <header class="header">
       <div class="header__bar">
         <img class="header__logo" src="images/logo.svg" alt="Sunnyside Logo" />
-        <img
-          class="mobile__menu"
-          src="images/icon-hamburger.svg"
-          alt="Menu Icon"
-        />
+
+        <nav>
+          <div class="dropdown">
+            <button class="icon-button">
+              <img src="images/icon-hamburger.svg" alt="Dropdown Icon" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#projects">Projects</a>
+              <button class="nav-item__button" href="#contact">Contact</button>
+            </div>
+          </div>
+        </nav>
         <div class="topnav">
           <a class="nav-item" href="#about">About</a>
           <a class="nav-item" href="#services">Services</a>
           <a class="nav-item" href="#projects">Projects</a>
-          <button class="nav-item__button">Contact</button>
+          <button class="nav-item__button" href="#contact">Contact</button>
         </div>
       </div>
       <div class="header__title-box">
@@ -84,13 +81,9 @@
       <div class="image image__glass--mobile image__glass--desktop"></div>
     </section>
 
-    <section class="section-row">
-      <div class="section__graphdesign">
-        <img
-          class="image"
-          src="images/mobile/image-graphic-design.jpg"
-          alt="picture of a cherry"
-        />
+    <!-- Graphic Design and Photography -->
+    <section class="section-graphics grid--desktop">
+      <div class="image image__gdesign--mobile image__gdesign--desktop">
         <div class="section-graphics-text">
           <h2 class="heading-secondary heading-secondary--graphic">
             Graphic Design
@@ -102,13 +95,7 @@
           </p>
         </div>
       </div>
-    </section>
-    <!-- <div class="section-graphics">
-        <img
-          class="image section-image-text"
-          src="images/mobile/image-photography.jpg"
-          alt="picture of a cherry"
-        />
+      <div class="image image__photograph--mobile image__photograph--desktop">
         <div class="section-graphics-text">
           <h2 class="heading-secondary heading-secondary--photography">
             Photography
@@ -118,85 +105,64 @@
             photos that improve your business image.
           </p>
         </div>
-      </div> -->
+      </div>
+    </section>
 
-    <!-- 
-
-
-
-      <section>
-        <div class="section-testimonials">
-          <div class="section-client-testimonials">
-            <h3 class="heading-tertiary">Client testimonials</h3>
-            <img
-              class="client"
-              src="images/image-emily.jpg"
-              alt="Emily R. Marketing Director"
-            />
-            <p class="paragraph paragraph--testimonials">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <h3 class="client-name">Emily R.</h3>
-            <p class="client-paragraph">Marketing Director</p>
-          </div>
-
-          <div class="section-client-testimonials">
-            <img
-              class="client"
-              src="images/image-thomas.jpg"
-              alt="Emily R. Marketing Director"
-            />
-            <p class="paragraph paragraph--testimonials">
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <h3 class="client-name">Thomas S.</h3>
-            <p class="client-paragraph">Chief Operating Officer</p>
-          </div>
-
-          <div class="section-client-testimonials">
-            <img
-              class="client"
-              src="images/image-jennie.jpg"
-              alt="Emily R. Marketing Director"
-            />
-            <p class="paragraph paragraph--testimonials">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <h3 class="client-name">Jennie F.</h3>
-            <p class="client-paragraph">Business Owner</p>
-          </div>
+    <section class="section-testimonials">
+      <h3 class="heading-tertiary">Client testimonials</h3>
+      <div class="section-client">
+        <div class="section-client-testimonials">
+          <img
+            class="client"
+            src="images/image-emily.jpg"
+            alt="Emily R. Marketing Director"
+          />
+          <p class="paragraph paragraph--testimonials">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h3 class="client-name">Emily R.</h3>
+          <p class="client-paragraph">Marketing Director</p>
         </div>
-      </section>
 
-      <section>
-        <div class="row">
+        <div class="section-client-testimonials">
           <img
-            class="gallery"
-            src="images/mobile/image-gallery-milkbottles.jpg"
-            alt="Milk Bottles"
+            class="client"
+            src="images/image-thomas.jpg"
+            alt="Emily R. Marketing Director"
           />
-          <img
-            class="gallery"
-            src="images/mobile/image-gallery-orange.jpg"
-            alt="Orange"
-          />
-          <img
-            class="gallery"
-            src="images/mobile/image-gallery-cone.jpg"
-            alt="Ice Cream Cone"
-          />
-          <img
-            class="gallery"
-            src="images/mobile/image-gallery-sugar-cubes.jpg"
-            alt="Sugar Cubes"
-          />
+          <p class="paragraph paragraph--testimonials">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h3 class="client-name">Thomas S.</h3>
+          <p class="client-paragraph">Chief Operating Officer</p>
         </div>
-      </section> -->
 
-    <!-- <footer class="footer">
+        <div class="section-client-testimonials">
+          <img
+            class="client"
+            src="images/image-jennie.jpg"
+            alt="Emily R. Marketing Director"
+          />
+          <p class="paragraph paragraph--testimonials">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h3 class="client-name">Jennie F.</h3>
+          <p class="client-paragraph">Business Owner</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery">
+      <div class="gallery-image gallery-image--1"></div>
+      <div class="gallery-image gallery-image--2"></div>
+      <div class="gallery-image gallery-image--3"></div>
+      <div class="gallery-image gallery-image--4"></div>
+    </section>
+
+    <footer class="footer">
       <img class="footer-logo" src="images/logo.svg" alt="Sunnyside Logo" />
       <ul class="footer-nav-item">
         <li><a class="footer-nav-link" href="#">About</a></li>
@@ -204,24 +170,31 @@
         <li><a class="footer-nav-link" href="#">Projects</a></li>
       </ul>
       <ul class="footer-social-item">
-        <a href="#"
+        <a class="footer-social-item-link" href="#"
           ><img src="images/icon-facebook.svg" alt="Facebook Link"
         /></a>
-        <a href="#"
+        <a class="footer-social-item-link" href="#"
           ><img src="images/icon-instagram.svg" alt="Instagram Link"
         /></a>
-        <a href="#"><img src="images/icon-twitter.svg" alt="Twitter Link" /></a>
-        <a href="#"
+        <a class="footer-social-item-link" href="#"
+          ><img src="images/icon-twitter.svg" alt="Twitter Link"
+        /></a>
+        <a class="footer-social-item-link" href="#"
           ><img src="images/icon-pinterest.svg" alt="Pinterest Link"
         /></a>
       </ul>
-    </footer> -->
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Hannah A.</a>.
-    </div> -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Hannah A.</a>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="script.js"
+      charset="utf-8"
+      defer
+    ></script>
   </body>
 </html>
