@@ -13,17 +13,18 @@ Users should be able to:
 
 ### 💻 Screenshot
 
-![](./screenshot.jpg)
+![Desktop](/images/screenshots/desktop.png)
+![Mobile](/images/screenshots/mobile.png)
 
 ### 🔗 Links
 
 - [Solution URL](https://github.com/hannah-alcantara/fm-sunnyside-agency-landing-page)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://hannah-alcantara.github.io/fm-sunnyside-agency-landing-page/)
 
 ### 🛠️ Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS/SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

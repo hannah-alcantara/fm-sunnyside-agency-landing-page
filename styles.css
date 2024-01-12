@@ -349,7 +349,7 @@ body {
     height: 2rem;
   }
   .header__title-box {
-    top: 47%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -363,6 +363,7 @@ body {
     display: none;
   }
   .heading-primary {
+    white-space: nowrap;
     font-size: 3.4rem;
     letter-spacing: 0.7rem;
   }
