@@ -7,6 +7,11 @@ iconButton.addEventListener("click", function () {
   dropdownContent.classList.toggle("show");
 });
 
+// document.getElementById("contact").addEventListener("click", function () {
+//   // Remove focus from the button
+//   this.blur();
+// });
+
 // Close the dropdown when clicking outside
 document.addEventListener("click", function (event) {
   if (

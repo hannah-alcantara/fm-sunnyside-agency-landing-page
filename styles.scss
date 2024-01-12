@@ -251,13 +251,22 @@ body {
   display: inline-block;
   line-height: 0.5rem;
   padding: 0 0.5rem;
+  transition: 0.4s ease;
 
   &--1 {
     border-bottom: 0.5rem solid hsla(51, 100%, 49%, 0.2);
+
+    &:hover {
+      border-bottom: 0.5rem solid $color-yellow;
+    }
   }
 
   &--2 {
     border-bottom: 0.5rem solid hsla(7, 99%, 70%, 0.2);
+
+    &:hover {
+      border-bottom: 0.5rem solid $color-red;
+    }
   }
 }
 
@@ -352,12 +361,25 @@ body {
 .footer-nav-link {
   text-decoration: none;
   color: $color-moderate-cyan;
+
+  &:hover {
+    color: $color-white;
+    transition: 0.3s ease;
+  }
 }
 
 .footer-social-item {
   display: flex;
   justify-content: space-evenly;
   margin: 4rem;
+
+  &-link {
+    padding: 0 1rem;
+    img:hover {
+      filter: brightness(0) invert(1);
+      transition: 0.3s ease;
+    }
+  }
 }
 
 .attribution {
@@ -444,6 +466,7 @@ body {
     text-decoration: none;
     margin: 0 2.2rem;
     color: $color-white;
+    font-family: "Barlow", sans-serif;
 
     &__button {
       border: none;
@@ -452,6 +475,14 @@ body {
       font-size: 1rem;
       font-family: "Fraunces", serif;
       text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsla(0, 0%, 100%, 0.3);
+        color: $color-white;
+        transition: 0.3s ease;
+        cursor: pointer;
+      }
     }
   }
 
@@ -565,6 +596,11 @@ body {
 
   .footer-nav-link {
     padding: 0 1.5rem;
+
+    &:hover {
+      color: $color-white;
+      transition: 0.3s ease;
+    }
   }
 
   .footer-social-item {
@@ -572,6 +608,10 @@ body {
 
     &-link {
       padding: 0 1rem;
+      img:hover {
+        filter: brightness(0) invert(1);
+        transition: 0.3s ease;
+      }
     }
   }
 }
