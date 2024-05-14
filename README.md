@@ -29,7 +29,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Javascript](https://www.javascript.com/)
-- [Styled Components](https://styled-components.com/) - For styles
 
 ## 👩‍💻 Author
 
