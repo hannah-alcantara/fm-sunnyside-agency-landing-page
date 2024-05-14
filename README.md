@@ -30,7 +30,5 @@ Users should be able to:
 - Mobile-first workflow
 - [Javascript](https://www.javascript.com/)
 
-## 👩‍💻 Author
-
-- Website - [Hannah Alcantara](#)
-- Frontend Mentor - [@hannah-alcantara](https://www.frontendmentor.io/profile/hannah-alcantara)
+## 👩‍💻 Author - Hannah Alcantara
+- [Frontend Mentor](https://www.frontendmentor.io/profile/hannah-alcantara)
